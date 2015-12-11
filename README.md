@@ -1,5 +1,5 @@
 # Twitter-Response-Bot
-A twitter bot made in Python. This searches for a certain keyword/s and replies to the tweet with a random line from a configured .txt
+A twitter bot made in Python. This searches for a certain keyword/s and replies to the tweet with a random line from a configured .txt.
 I used Tweepy, a module for python.
 
 SOURCES:  
