@@ -24,7 +24,7 @@ class streamListener(tweepy.StreamListener):
         randQuote = quoteList[randNumb]
         #gets their tweetid so you can reply to it
         tweetId = status.id
-        #prints the user and tweet.
+		#prints the user and tweet.
         print("User:" + user + "\n    Message: " + status.text)
         message = "@{username} {quotation}".format(username=user, quotation=randQuote)
 		#posts the tweet, replying to the user
@@ -51,6 +51,7 @@ if __name__ == '__main__':
     #closes the file
     filename.close()
 
+    print("File loaded. Program initialized. Ready.")
     listener = streamListener()
  
     stream = tweepy.Stream(auth, listener)
