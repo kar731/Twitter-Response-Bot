@@ -1,4 +1,4 @@
-﻿import tweepy
+import tweepy
 import time
 import sys
 from random import randint
@@ -24,12 +24,13 @@ class streamListener(tweepy.StreamListener):
         randQuote = quoteList[randNumb]
         #gets their tweetid so you can reply to it
         tweetId = status.id
-		#prints the user and tweet.
+        #prints the user and tweet.
         print("User:" + user + "\n    Message: " + status.text)
         message = "@{username} {quotation}".format(username=user, quotation=randQuote)
-		#posts the tweet, replying to the user
         api.update_status(message, tweetId)
-
+		#prints what tweet was sent
+        print("    Sent Tweet: {0}".format(message))
+		
         return True
  
     def on_error(self, status_code):
