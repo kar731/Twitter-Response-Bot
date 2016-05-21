@@ -1,4 +1,6 @@
 # Twitter-Response-Bot
+[![Build Status](https://travis-ci.org/kar731/Twitter-Response-Bot.svg?branch=master)](https://travis-ci.org/kar731/Twitter-Response-Bot)
+
 A twitter bot made in Python. This searches for a certain keyword/s and replies to the tweet with a random line from a configured .txt.
 I used Tweepy, a module for python.
 
